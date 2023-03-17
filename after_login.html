@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Medica</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #2980B9;
+    }
+    
+    .dropdown {
+      position: right;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown a:hover {background-color: #ddd;}
+    
+    .show {display: block;}
+    </style>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- left side menu  -->
+      <div class="left-side-menu">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo_medica.png" alt="logo" />
+          </a>
+        </div>
+
+        <div class="sub-menu">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#section-two">
+            <li>About Us</li>
+          </a>
+          <a href="#section-third">
+            <li>Goals</li>
+          </a>
+          <a href="#section-five">
+            <li>Tips</li>
+          </a>
+        </div>
+      </div>
+
+      <!-- right side menu  -->
+      <div class="right-side-menu">
+        <div class="sub-menu">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Profile</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="num">Mobile No. / Email Id</a>
+                  <a href="#about">Password</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- -- our hero section start------ -->
+  <section class="main-hero-section">
+    <!-- left side code   -->
+    <div class="hero-left-side">
+      <h1>Healthy living simplified</h1>
+      <p>
+        Take control of your goals. Track calories, breakdown
+        ingredients.Congratulations on taking a forward step to get in shape
+        and feel great.
+      </p>
+      <div class="button-group">
+        <a href="https://apps.apple.com/in/app/medica/id553430564">
+          <img src="images/appstore.png" alt="appstore" class="appStore" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.mwaysolutions.messeDd.Medica">
+          <img src="images/googlePlay.png" alt="googlePlay" />
+        </a>
+      </div>
+    </div>
+    <!-- right side code   -->
+    <div class="hero-right-side">
+      <img src="images/heropage.png" alt="heropageImg" />
+    </div>
+  </section>
+  <!-- ---- our 2nd section start ------- -->
+
+  <section class="common-section" id="section-two">
+    <!-- left side of section 2  -->
+    <div class="left-side">
+      <figure>
+        <img src="images/section2pic.png" alt="section2" />
+      </figure>
+    </div>
+
+    <!-- right side of section 2  -->
+    <div class="right-side">
+      <h2>Your Daily Healthy App , MEDICA!</h2>
+      <p> Download our app , to enjoy the latest extra features on the app and track your health..
+
+      </p>
+      <div class="button-group">
+        <button class="common-button"><a href="/login/login.html">get started</a></button>
+        <button class="common-button-normal">how its work?</button>
+      </div>
+    </div>
+  </section>
+
+  <!--- our 3rd section start ------ -->
+  <section class="section-third" id="section-third">
+    <h2>The Tools For Your Goals</h2>
+    <p>
+      We are here with the tools that will help you to reach your goals
+    </p>
+    <div class="section-third-task">
+      <div class="task-1">
+        <img src="images/sectionIcon1.png" alt="icon1" />
+        <h3>Learn & Improve</h3>
+        <p>
+          when its come to reach your goal, you must learn to improve lots of things<br>
+          click here to Learn and Improve
+        </p>
+      </div>
+
+      <div class="task-2">
+        <img src="images/sectionIcon2.png" alt="icon1" />
+        <h3>Time Management</h3>
+        <p>
+          we know that Time Management is a key of success ! <br>
+          manage your daily to do list with us and increase your productivity
+        </p>
+      </div>
+
+      <div class="task-3">
+        <img src="images/sectionIcon3.png" alt="icon1" />
+        <h3>Stay Motivated</h3>
+        <p>
+          you must need a daily motivation dose to increase your hunger for your goals.
+          Don't worry we are here with motivational videos of famous personalities
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ---- our 4th section start-------- -->
+
+  <section class="common-section" id="section-four">
+    <!-- right side of section 2  -->
+    <div class="right-side">
+      <h2>Create Your Own Fitness Journey</h2>
+      <p>
+        The best investment you can ever make is in your own health.. <br>
+        Invest in your health and create your fitness journey with "MEDICA"..
+      </p>
+      <div class="button-group">
+        <button class="common-button"><a href="/login/login.html">get started</a></button>
+        <button class="common-button-normal">how its work?</button>
+      </div>
+    </div>
+
+    <!-- left side of section 2  -->
+    <div class="left-side">
+      <img src="images/section4img.png" alt="section2" />
+    </div>
+  </section>
+
+  <!-- ----- our 5th section start  -->
+
+  <section class="common-section" id="section-five">
+    <!-- left side of section 2  -->
+    <div class="left-side">
+      <img src="images/section5.png" alt="section5" />
+    </div>
+
+    <!-- right side of section 2  -->
+    <div class="right-side">
+      <h2>We Will Take Care Of Your Fitness Goals</h2>
+
+      <div class="fitness-goals">
+        <div class="rule1">
+          <h3>
+            <i class="fas fa-heart"></i> We will take care of your fitness
+            goals
+          </h3>
+          <p>
+            want to get in perfect shape, "MEDICA" will help you to control calorie intake and gives suggestion based on
+            your diet
+          </p>
+        </div>
+
+        <div class="rule2">
+          <h3>
+            <i class="fas fa-heart"></i> Track your daily habits with water
+          </h3>
+          <p>
+
+            we will track your water intake and on perticular instant of time reminds you to drink enough water..
+          </p>
+        </div>
+
+        <div class="rule3">
+          <h3><i class="fas fa-heart"></i> Track your weight and waist</h3>
+          <p>
+            We will help you track your weight daily ...
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------- our 6th section start------------------------------------------ -->
+  <section class="section-sixth" id="section-sixth">
+    <h2>Founders</h2>
+    <h3>Electronics Rockerz</h3>
+    <p>
+      Teamwork is the ability to work together toward a common vision
+    </p>
+    <div class="section-sixth-task">
+      <div class="task-1">
+        <img src="images/Mayank.jpg" alt="icon1" />
+        <h3>Mayank Ashtekar</h3>
+
+      </div>
+
+      <div class="task-2">
+        <img src="images/Prajwal.jpeg" alt="icon1" />
+        <h3>Prajwal Dhopre</h3>
+
+      </div>
+
+      <div class="task-3">
+        <img src="images/Karan.jpg" alt="icon1" />
+        <h3>Karan Bansinge</h3>
+
+      </div>
+      <div class="task-4">
+        <img src="images/Shreyash.jpg" alt="icon1" />
+        <h3>Shreyash Bhandarkar</h3>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ----------------------------- our 7th section start 
+        ---------------------------------------------------------------------- -->
+
+  <footer>
+    <div class="logo-div">
+      <img src="images/logo_medica.png" alt="logo" />
+      <p>medica24@gmail.com</p>
+    </div>
+
+    <div class="footer-menu">
+      <div class="footer-div-2">
+        <h4>Products</h4>
+        <a href="#">
+          <li>pricing</li>
+        </a>
+        <a href="#">
+          <li>pricing</li>
+        </a>
+      </div>
+
+      <div class="footer-div-3">
+        <h4>Abouts</h4>
+        <a href="#">
+          <li>pricing</li>
+        </a>
+        <a href="#">
+          <li>pricing</li>
+        </a>
+      </div>
+
+      <div class="footer-div-4">
+        <h4>Blogs</h4>
+        <a href="#">
+          <li>pricing</li>
+        </a>
+        <a href="#">
+          <li>pricing</li>
+        </a>
+      </div>
+
+      <div class="footer-div-5">
+        <h4>Get In Touch</h4>
+        <a href="#">
+          <li>Questions Or Feedback?</li>
+        </a>
+        <a href="#">
+          <li>We'll love to help you</li>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+</body>
+
+</html>
